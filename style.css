@@ -45,7 +45,7 @@ a:hover {
 }
 
 .bloc-lg {
-    padding: 100px 50px;
+    padding: 70px 50px;
 }
 
 .bloc-md {
@@ -283,7 +283,7 @@ a:hover {
 }
 
 .navbar {
-    margin-bottom: 0;
+    margin: 1em;
     z-index: 1;
 }
 
@@ -306,9 +306,9 @@ a:hover {
     min-width: 100px;
 }
 
-.nav-center .navbar-brand img {
+/*.nav-center .navbar-brand img {
     margin: 0;
-}
+}*/
 
 .navbar .nav {
     padding-top: 2px;
@@ -350,7 +350,7 @@ a:hover {
     float: left;
 }
 
-.nav-invert .navbar-header,
+.nav-invert .navbar-logo,
 .nav-invert .navbar-brand {
     float: right;
     position: relative;
@@ -373,7 +373,7 @@ a:hover {
         left: 0;
         right: 0;
     }
-    .nav-center {
+/*  .nav-center {
         text-align: center;
     }
     .nav-center .navbar-header {
@@ -395,7 +395,7 @@ a:hover {
     .nav-center.mini-nav .navbar-toggle {
         float: none;
         margin: 10px auto 0;
-    }
+    }*/
 }
 
 .nav > li > .dropdown a {
@@ -812,6 +812,19 @@ h4 {
     background-image: url("img/image-de-presentation.webp");
 }
 
+.flex-contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-contact {
+    margin-bottom: 1em;
+}
+
+.contact {
+
+}
+
 @media (max-width: 1024px) {
     .bloc {
         padding-left: 20px;
@@ -830,9 +843,9 @@ h4 {
     .navbar .nav {
         max-width: 80%
     }
-    .nav-center.navbar .nav {
+    /*.nav-center.navbar .nav {
         max-width: 100%
-    }
+    }*/
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
@@ -854,11 +867,11 @@ h4 {
     .b-parallax {
         background-attachment: scroll;
     }
-    .page-container,
+    /*.page-container,
     #hero-bloc {
         overflow-x: hidden;
         position: relative;
-    }
+    }*/
     .bloc {
         padding-left: constant(safe-area-inset-left);
         padding-right: constant(safe-area-inset-right);
@@ -877,10 +890,10 @@ h4 {
 }
 
 @media (max-width: 767px) {
-    .page-container {
+    /*.page-container {
         overflow-x: hidden;
         position: relative;
-    }
+    }*/
     h1,
     h2,
     h3,
@@ -892,6 +905,9 @@ h4 {
         padding-left: 10px!important;
         padding-right: 10px!important;
     }
+    .b-parallax {
+        background-attachment: scroll;
+    }
     .navbar .nav {
         padding-top: 0;
         border-top: 1px solid rgba(0, 0, 0, .2);
@@ -899,7 +915,7 @@ h4 {
     }
     .navbar.row {
         margin-left: 0;
-        margin-right: 0;
+
     }
     .site-navigation {
         position: inherit;
@@ -949,14 +965,14 @@ h4 {
         max-height: 40px;
         width: auto;
     }
-    .nav-invert .navbar-header {
+    .nav-invert .navbar-logo {
         float: none;
         width: 100%;
     }
-    .nav-invert .navbar-toggle {
+    /*.nav-invert .navbar-toggle {
         float: left;
         margin-left: 10px;
-    }
+    }*/
     .bloc {
         padding-left: 0;
         padding-right: 0;
