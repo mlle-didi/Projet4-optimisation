@@ -45,8 +45,9 @@ a:hover {
 }
 
 .bloc-lg {
-    padding: 45px 50px;
+    padding: 100px 50px;
 }
+
 
 .bloc-md {
     padding: 50px;
@@ -128,7 +129,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+    color: #333;
 }
 
 .d-bloc .a-btn:hover,
@@ -365,6 +366,7 @@ a:hover {
 .quote-autor {
     font-size: 1em;
     font-style: normal;
+    color: #333333;
 }
 
 @media (min-width: 768px) {
@@ -656,7 +658,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: #333!important;
 }
 
 .container {
@@ -697,7 +699,7 @@ p {
 
 .cta-hero {
     margin-top: 22px;
-    color: #FFFFFF!important;
+    color: #F3976C !important;
     text-transform: uppercase;
     padding: 12px 28px 12px 28px;
     font-size: 16px;
@@ -718,7 +720,6 @@ h3 {
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 700;
-    color: #333333!important;
 }
 
 .med-width-whitespace {
@@ -728,10 +729,6 @@ h3 {
 }
 
 h1 {
-    color: #333333!important;
-}
-
-h4 {
     color: #333333!important;
 }
 
@@ -784,13 +781,13 @@ h4 {
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
-    color: #FFFFFF!important;
+    background: #333333;
+    color: #F3976C!important;
 }
 
 .btn-atomic-tangerine:hover {
     background: #c27956!important;
-    color: #FFFFFF!important;
+    color: #333!important;
 }
 
 .ltc-white {
@@ -835,8 +832,15 @@ blockquote {
     border-left: 0;
 }
 
-.relative {
+.position-banniere {
     position: relative;
+    width: 80%;
+    margin: auto;
+}
+
+.orange-background {
+    background-color: #F3976C;
+    padding: 10px;
 }
 
 @media (max-width: 1024px) {
