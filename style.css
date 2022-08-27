@@ -6,6 +6,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
 header,main,footer {
     overflow-x: hidden;
     position: relative;
@@ -289,7 +290,6 @@ a:hover {
 
 .navbar {
     z-index: 1;
-    /*width: 100%;*/
 }
 
 .navbar-brand {
@@ -310,10 +310,6 @@ a:hover {
 .navbar-brand img[src$=svg] {
     min-width: 100px;
 }
-
-/*.nav-center .navbar-brand img {
-    margin: 0;
-}*/
 
 .navbar .nav {
     padding-top: 2px;
@@ -394,29 +390,6 @@ a:hover {
         left: 0;
         right: 0;
     }
-/*  .nav-center {
-        text-align: center;
-    }
-    .nav-center .navbar-header {
-        width: 100%;
-    }
-    .nav-center .navbar-header,
-    .nav-center .navbar-brand,
-    .nav-center .nav > li {
-        float: none;
-        display: inline-block;
-    }
-    .nav-center .site-navigation {
-        position: relative;
-        width: 100%;
-        right: 0;
-        margin-right: 0px;
-        margin-top: 20px;
-    }
-    .nav-center.mini-nav .navbar-toggle {
-        float: none;
-        margin: 10px auto 0;
-    }*/
 }
 
 .nav > li > .dropdown a {
@@ -756,12 +729,6 @@ h1 {
 .portfolio-thumb {
     margin-bottom: 24px;
 }
-
-/*.portfolio-row {
-    margin-bottom: 40px;
-    margin-top: 40px;
-}*/
-
 .avatar {
     box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.3);
 }
@@ -876,18 +843,15 @@ blockquote {
     .navbar .nav {
         max-width: 80%
     }
-    /*.nav-center.navbar .nav {
-        max-width: 100%
-    }*/
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -900,25 +864,10 @@ blockquote {
     .b-parallax {
         background-attachment: scroll;
     }
-    /*.page-container,
-    #hero-bloc {
-        overflow-x: hidden;
-        position: relative;
-    }*/
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
     .bloc-group,
     .bloc-group .bloc {
         display: block;
         width: 100%;
-    }
-    .bloc-fill-screen .fill-bloc-top-edge,
-    .bloc-fill-screen .fill-bloc-bottom-edge {
-        padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
     }
 }
 
